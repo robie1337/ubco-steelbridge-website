@@ -4,19 +4,21 @@ The website for the **UBCO Steel Bridge** engineering design team at UBC Okanaga
 
 ## Structure
 
-- `ubco_steelbridge_v17.html` — the site (single self-contained page)
-- `assets/comp-photos/web/` — web-optimized competition photos
+- `index.html` — page markup
+- `css/styles.css` — all styles
+- `js/main.js` — interactions (hero slideshow, scroll animation, panel nav, contact form)
+- `assets/img/` — sponsor logos, favicon, and hero background images
+- `assets/team/` — team-member photos
+- `assets/comp-photos/web/` — competition photos
 - `vid-frames/` — CAD assembly-animation frames used by the scroll sequence
-- `*-logo.png` / `*-logo.jpg` — sponsor logos
-- `favicon.png` — site icon
 
 ## Local preview
 
-Open `ubco_steelbridge_v17.html` directly in a browser, or serve the folder:
+Open `index.html` in a browser, or serve the folder for a production-like setup:
 
 ```bash
 python -m http.server 8000
-# then visit http://localhost:8000/ubco_steelbridge_v17.html
+# then open http://localhost:8000/
 ```
 
 ## Contact form

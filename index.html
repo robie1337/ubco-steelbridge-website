@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>UBCO Steel Bridge | 2025–26 Engineering Design Team</title>
+<meta name="description" content="UBCO Steel Bridge is a student-led engineering design team at UBC Okanagan that designs, fabricates, and constructs precision steel structures for the Canadian National Steel Bridge Competition."/>
+<meta name="theme-color" content="#0a1628"/>
+<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+<link rel="apple-touch-icon" href="assets/img/favicon.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="UBCO Steel Bridge | 2025–26 Engineering Design Team"/>
+<meta property="og:description" content="A student-led engineering design team at UBC Okanagan — designing, fabricating, and competing at the national level."/>
+<meta property="og:image" content="assets/comp-photos/web/team-arena.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<a href="#pages" class="skip-link">Skip to content</a>
+<header id="topbar" role="banner">
+  <button class="logo-btn" id="logo-home"><img src="assets/img/ubco-steel-bridge.png" alt="UBCO Steel Bridge"/></button>
+  <nav class="top-nav">
+    <button class="top-link" data-panel="home">Home</button>
+    <button class="top-link" data-panel="about">About</button>
+    <button class="top-link" data-panel="process">Our Process</button>
+    <button class="top-link" data-panel="team">Team</button>
+    <button class="top-link" data-panel="events">Season Log</button>
+    <button class="top-link" data-panel="sponsors">Sponsors</button>
+  </nav>
+  <button class="top-cta" data-panel="contact">Get in Touch</button>
+  <button class="burger" id="burger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span><span></span></button>
+</header>
+<nav id="overlay">
+  <button class="ov-close" id="ov-close" aria-label="Close navigation menu"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><line x1="3" y1="3" x2="17" y2="17"/><line x1="17" y1="3" x2="3" y2="17"/></svg></button>
+  <button class="ov-item" data-panel="home">Home</button>
+  <button class="ov-item" data-panel="about">About</button>
+  <button class="ov-item" data-panel="process">Our Process</button>
+  <button class="ov-item" data-panel="team">Team</button>
+  <button class="ov-item" data-panel="events">Season Log</button>
+  <button class="ov-item" data-panel="sponsors">Sponsors</button>
+</nav>
+<main id="pages">
+<section id="p-home" class="panel">
+  <div class="hero-wrap">
+    <div class="hs-slide  hs-active" style="background-image:url('assets/img/hero-1.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/img/hero-2.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/img/hero-3.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/img/hero-4.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/img/hero-5.jpg')"><div class="hs-overlay"></div></div>
+    <div class="hs-slide" style="background-image:url('assets/comp-photos/web/team-arena.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/comp-photos/web/team-9828.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/comp-photos/web/team-9831.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/comp-photos/web/team-floor.jpg')"><div class="hs-overlay"></div></div><div class="hs-slide" style="background-image:url('assets/comp-photos/web/team-2025-winnipeg.jpg')"><div class="hs-overlay"></div></div>
+    <div class="hero-text">
+      <h1 class="hs-h1"><span class="sl sl-top">Greatness,</span><span class="sl sl-mid">Built Member</span><span class="sl sl-bot"><span class="ac">by Member.</span></span></h1>
+      <p class="hs-desc">UBCO&rsquo;s competitive steel bridge team &mdash; designing, fabricating, and assembling precision steel structures at the national level.</p>
+      <div class="hs-btns">
+        <button class="btn-go" data-go="events">2025 Competition</button>
+        <button class="btn-go btn-ghost" data-go="sponsors">Our Partners</button>
+      </div>
+    </div>
+  </div>
+  <div class="stat-bar">
+    <div class="stat-cell"><span class="stat-n" data-to="2">0</span><span class="stat-l">Bridges Built</span></div>
+    <div class="stat-cell"><span class="stat-n" data-to="70" data-suffix="+">0</span><span class="stat-l">Team Members</span></div>
+    <div class="stat-cell"><span class="stat-n" data-to="2">0</span><span class="stat-l">Years Competing</span></div>
+    <div class="stat-cell"><span class="stat-n" data-to="4">0</span><span class="stat-l">Sub-teams</span></div>
+  </div>
+  <!-- Scroll-triggered video (canvas frame sequence) -->
+  <div class="vid-scroll-wrap" id="vidScrollWrap">
+    <div class="vid-scroll-sticky">
+      <canvas class="vid-scroll-canvas" id="vidCanvas"></canvas>
+      <div class="vid-scroll-overlay">
+        <div class="vid-scroll-text">
+          <h2 class="vid-scroll-title">Steel Meets<br><span class="ac">Precision.</span></h2>
+        </div>
+      </div>
+      <div class="vid-scroll-progress"><div class="vid-scroll-bar" id="vidBar"></div></div>
+    </div>
+  </div>
+  <!-- Sponsor conveyor belt -->
+  <div class="marquee-section">
+    <div class="marquee-label">Backed by Industry</div>
+    <div class="marquee-track">
+      <div class="marquee-item"><img src="assets/img/cisc-logo.png" alt="CISC"/></div>
+      <div class="marquee-item"><img src="assets/img/altar-logo.png" alt="Altar Metal Fab"/></div>
+      <div class="marquee-item"><img src="assets/img/emil-logo.png" alt="Emil Anderson"/></div>
+      <div class="marquee-item"><img src="assets/img/seabc-logo.jpg" alt="SEABC"/></div>
+      <div class="marquee-item"><img src="assets/img/ledcor-logo.png" alt="Ledcor"/></div>
+      <div class="marquee-item"><img src="assets/img/reliable-logo.png" alt="Reliable Tube"/></div>
+      <div class="marquee-item"><img src="assets/img/altair-logo.png" alt="Altair"/></div>
+      <div class="marquee-item"><img src="assets/img/basis-logo.jpg" alt="BASIS Engineering"/></div>
+      <div class="marquee-item"><img src="assets/img/associated-logo.png" alt="Associated Engineering"/></div>
+      <div class="marquee-item"><img src="assets/img/glotman-logo.png" alt="Glotman Simpson"/></div>
+      <div class="marquee-item"><img src="assets/img/wildstone-logo.png" alt="Wildstone Construction"/></div>
+      <div class="marquee-item"><img src="assets/img/ubc-logo.png" alt="UBC Okanagan"/></div>
+      <div class="marquee-item"><img src="assets/img/suo-logo.jpg" alt="SUO"/></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="marquee-item"><img src="assets/img/cisc-logo.png" alt="CISC"/></div>
+      <div class="marquee-item"><img src="assets/img/altar-logo.png" alt="Altar Metal Fab"/></div>
+      <div class="marquee-item"><img src="assets/img/emil-logo.png" alt="Emil Anderson"/></div>
+      <div class="marquee-item"><img src="assets/img/seabc-logo.jpg" alt="SEABC"/></div>
+      <div class="marquee-item"><img src="assets/img/ledcor-logo.png" alt="Ledcor"/></div>
+      <div class="marquee-item"><img src="assets/img/reliable-logo.png" alt="Reliable Tube"/></div>
+      <div class="marquee-item"><img src="assets/img/altair-logo.png" alt="Altair"/></div>
+      <div class="marquee-item"><img src="assets/img/basis-logo.jpg" alt="BASIS Engineering"/></div>
+      <div class="marquee-item"><img src="assets/img/associated-logo.png" alt="Associated Engineering"/></div>
+      <div class="marquee-item"><img src="assets/img/glotman-logo.png" alt="Glotman Simpson"/></div>
+      <div class="marquee-item"><img src="assets/img/wildstone-logo.png" alt="Wildstone Construction"/></div>
+      <div class="marquee-item"><img src="assets/img/ubc-logo.png" alt="UBC Okanagan"/></div>
+      <div class="marquee-item"><img src="assets/img/suo-logo.jpg" alt="SUO"/></div>
+    </div>
+  </div>
+  <section class="ed-section" id="ed-section">
+    <div class="ed-photo-wrap">
+      <img src="assets/comp-photos/web/team-arena.jpg" alt="UBCO Steel Bridge team at the CNSBC 2026 competition arena" loading="lazy"/>
+      <div class="ed-photo-overlay">
+        <div class="ed-eyebrow">Arena floor &middot; CNSBC 2026</div>
+        <h2 class="ed-pullquote">Months in the making.<em>One bridge.</em><span class="ac">No second chances.</span></h2>
+      </div>
+    </div>
+    <div class="ed-caption">
+      <p>Construction Speed is judged in the seconds between a referee&rsquo;s whistle and the last bolt seated. Elegance earns no points &mdash; only being right the first time.</p>
+      <span class="byline">Notes from the floor &middot; CNSBC 2026</span>
+    </div>
+  </section>
+  <section class="sp-section">
+  <div class="sp-inner">
+    <div class="sp-header">
+      <div class="sp-eyebrow">In Their Own Words</div>
+      <h2 class="sp-title">Why we keep doing this.</h2>
+      <p class="sp-lead">Bridges come apart at the end of every season. The team doesn&rsquo;t. Here&rsquo;s what members say they take with them.</p>
+    </div>
+
+    <!-- ROW 1: Jethro — photo left, quote right -->
+    <div class="sp-row sp-row-ltr sp-anim">
+      <div class="sp-bubble-wrap">
+        <div class="sp-bubble">
+          <img src="assets/team/benn-jethro-sia.jpg" alt="Benn Jethro Sia"/>
+        </div>
+        <div class="sp-bubble-label">
+          <div class="sp-bubble-name">Benn Jethro Sia</div>
+          <div class="sp-bubble-role">Structural Lead &rsquo;28</div>
+        </div>
+      </div>
+      <div class="sp-quote-wrap">
+        <div class="sp-qdeco">&ldquo;</div>
+        <blockquote class="sp-quote">Working in S-Frame to model and analyze our bridge gave me hands-on software experience that I simply couldn&rsquo;t get from coursework alone. Being able to walk into a co-op interview and say I&rsquo;d designed a real competition structure &mdash; and used industry-standard tools to do it &mdash; made all the difference. Steel Bridge didn&rsquo;t just teach me structural analysis, it made me job-ready.</blockquote>
+        <div class="sp-qattr">Benn Jethro Sia &mdash; Structural Lead, BASc Civil Engineering &rsquo;28</div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Lion — quote left, photo right -->
+    <div class="sp-row sp-row-rtl sp-anim">
+      <div class="sp-quote-wrap">
+        <div class="sp-qdeco">&ldquo;</div>
+        <blockquote class="sp-quote">Cold-emailing and meeting with sponsors taught me how to communicate value to professionals I&rsquo;d never met before. Learning how to craft a pitch, handle rejection, and build genuine relationships with industry partners gave me a level of professional confidence that no classroom could replicate. Those conversations shaped the way I approach networking today.</blockquote>
+        <div class="sp-qattr">Lion Alaji &mdash; Sponsorship Director, BASc Civil Engineering &rsquo;28</div>
+      </div>
+      <div class="sp-bubble-wrap">
+        <div class="sp-bubble">
+          <img src="assets/team/lion-alaji.jpg" alt="Lion Alaji"/>
+        </div>
+        <div class="sp-bubble-label">
+          <div class="sp-bubble-name">Lion Alaji</div>
+          <div class="sp-bubble-role">Sponsorship Director &rsquo;28</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sp-cta">
+      <span class="sp-cta-text">Ready to build your career while building bridges?</span>
+      <button class="btn-go sp-join-btn">Join the Team</button>
+    </div>
+  </div>
+</section>
+  <!-- TODO: Instagram feed section — uncomment when ready to implement
+  <div class="insta-section">
+    <div class="insta-header">
+      <div class="insta-eyebrow">Follow Along</div>
+      <h2 class="insta-title">From the <span class="ac">Shop Floor.</span></h2>
+      <a href="https://www.instagram.com/ubcosteelbridge/" target="_blank" rel="noopener" class="insta-follow">@ubcosteelbridge</a>
+    </div>
+    <div class="insta-embed-wrap">
+      Option A: Elfsight widget (auto-updates, shows pinned + recent)
+      SETUP: Go to elfsight.com, create a free account, make an Instagram Feed
+      widget for @ubcosteelbridge, and replace the widget ID below.
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-YOUR-WIDGET-ID" data-elfsight-app-lazy></div>
+
+      Option B: Native Instagram profile embed (always up to date)
+      <iframe src="https://www.instagram.com/ubcosteelbridge/embed"
+        style="width:100%;min-height:600px;max-width:900px;margin:0 auto;display:block;border:none;border-radius:6px;background:#fff;"
+        scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+    </div>
+  </div>
+  -->
+</section>
+<section id="p-about" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">The Team</div><h2 class="pane-title">More Than a Team.</h2><p class="pane-lead">A student-run engineering design team at UBC Okanagan, going head-to-head with universities from across Canada.</p></div>
+    <figure class="ab2-feature">
+      <img src="assets/comp-photos/web/team-2025-pose.jpg" alt="The UBCO Steel Bridge team with their first bridge" loading="lazy"/>
+      <figcaption><b>Winnipeg, MB &middot; Our debut</b>The first squad, behind the first bridge.</figcaption>
+    </figure>
+    <div class="ab2-intro">
+      <div class="ab2-lead">
+        <p class="big">Every year we design a steel bridge from scratch, fabricate it by hand, and race the clock to assemble it at the national championship.</p>
+        <p>Founded at UBC Okanagan in 2024, the team pulls students from civil, mechanical, electrical, and beyond. There are no spectators here &mdash; every member works the design, the steel, or the timed build that decides it all.</p>
+        <p>We run out of UBCO&rsquo;s engineering facilities in Kelowna, BC, on a build cycle that starts in September and ends on the competition floor each spring.</p>
+      </div>
+      <div class="ab2-stats">
+        <div><span class="ab2-n">2024</span><span class="ab2-l">Founded</span></div>
+        <div><span class="ab2-n">70+</span><span class="ab2-l">Members</span></div>
+        <div><span class="ab2-n">2&times;</span><span class="ab2-l">Nationals</span></div>
+        <div><span class="ab2-n">4+</span><span class="ab2-l">Disciplines</span></div>
+      </div>
+    </div>
+    <div class="ab2-do-head">What We Do</div>
+    <div class="ab2-do">
+      <article class="ab2-do-item"><div class="ab2-do-img cad-media"><img src="assets/comp-photos/web/design-cad.jpg" alt="3D structural model of the bridge" loading="lazy"/></div><div class="ab2-do-b"><div class="ab2-do-num">01</div><h4>Structural Design</h4><p>Geometry, member sizing, and connections &mdash; optimized in analysis software and checked by hand.</p></div></article>
+      <article class="ab2-do-item"><div class="ab2-do-img"><img src="assets/comp-photos/web/kit-team.jpg" alt="The fabricated bridge members laid out" loading="lazy"/></div><div class="ab2-do-b"><div class="ab2-do-num">02</div><h4>Steel Fabrication</h4><p>Cutting, drilling, and welding structural steel to tolerances measured in fractions of a millimetre.</p></div></article>
+      <article class="ab2-do-item"><div class="ab2-do-img"><img src="assets/comp-photos/web/arena-wide.jpg" alt="The team on the competition floor" loading="lazy"/></div><div class="ab2-do-b"><div class="ab2-do-num">03</div><h4>Race-Day Assembly</h4><p>Dozens of timed runs until the build is muscle memory and every second is accounted for.</p></div></article>
+    </div>
+    <div class="ev-heading">Around the Team</div>
+    <div class="comp-strip">
+      <div class="comp-strip-item"><img src="assets/comp-photos/web/build-kneel.jpg" alt="The team assembling the bridge" loading="lazy"/><div class="comp-strip-cap"><span class="meta">Mid-build</span>Every bolt seated by hand.</div></div>
+      <div class="comp-strip-item"><img src="assets/comp-photos/web/team-floor.jpg" alt="The team working on the competition floor" loading="lazy"/><div class="comp-strip-cap"><span class="meta">On the floor</span>Setting up before the run.</div></div>
+      <div class="comp-strip-item"><img src="assets/comp-photos/web/bridge-outdoor.jpg" alt="The bridge assembled outdoors" loading="lazy"/><div class="comp-strip-cap"><span class="meta">Test fit</span>The full span, end to end.</div></div>
+    </div>
+  </div>
+</section>
+<section id="p-process" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">Design Cycle</div><h2 class="pane-title">From Blueprint to Bridge.</h2><p class="pane-lead">From the first sketch to the final whistle &mdash; how a bridge comes together every season.</p></div>
+    <div class="pr2">
+      <article class="pr2-step">
+        <div class="pr2-media cad-media"><img src="assets/comp-photos/web/design-cad.jpg" alt="3D structural model of the bridge truss" loading="lazy"/></div>
+        <div class="pr2-body"><span class="pr2-num">01</span><div class="pr2-kicker">Design</div><h3>Structural Design</h3><p>Every season starts with the rulebook. We turn constraints into geometry &mdash; modelling the structure, sizing members, and detailing connections in analysis software and by hand.</p></div>
+      </article>
+      <article class="pr2-step">
+        <div class="pr2-media"><img src="assets/comp-photos/web/parts-layout.jpg" alt="Fabricated bridge members laid out before assembly" loading="lazy"/></div>
+        <div class="pr2-body"><span class="pr2-num">02</span><div class="pr2-kicker">Build</div><h3>Steel Fabrication</h3><p>Members cut, drill, and weld structural steel to spec. Fractions of a millimetre decide whether the pieces fit when the pressure is on.</p></div>
+      </article>
+      <article class="pr2-step">
+        <div class="pr2-media practice-media"><img src="assets/comp-photos/web/practice.jpg" alt="Team members practising the bridge build outside the engineering building" loading="lazy"/></div>
+        <div class="pr2-body"><span class="pr2-num">03</span><div class="pr2-kicker">Practice</div><h3>Assembly Practice</h3><p>We run the full build over and over &mdash; refining the order, assigning roles, and shaving seconds off every attempt.</p></div>
+      </article>
+      <article class="pr2-step">
+        <div class="pr2-media"><img src="assets/comp-photos/web/build-threading.jpg" alt="The team building on the competition floor" loading="lazy"/></div>
+        <div class="pr2-body"><span class="pr2-num">04</span><div class="pr2-kicker">Compete</div><h3>Competition Day</h3><p>At the CNSBC the bridge is scored on stiffness, deflection, weight, speed, and looks &mdash; with the clock running from the first whistle.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="p-team" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">The Roster</div><h2 class="pane-title">This Season&rsquo;s Lineup.</h2><p class="pane-lead">Meet the students leading UBCO Steel Bridge &mdash; current and past seasons.</p></div>
+    <div class="tm-tabs" role="tablist" aria-label="Season selector">
+      <button class="tm-tab active" data-season="2026" role="tab" aria-selected="true" aria-controls="tm-2026">2026&ndash;27 Season</button>
+      <button class="tm-tab" data-season="2025" role="tab" aria-selected="false" aria-controls="tm-2025">2025&ndash;26 Season</button>
+    </div>
+    <div id="tm-2026" class="tm-season active" role="tabpanel" aria-labelledby="tab-2026">
+    <div class="team-sec exec-sec"><div class="team-sec-head">Executive</div>
+      <div class="exec-tier exec-top"><div class="t-card"><div class="t-photo"><img src="assets/team/shaleena-egdell.jpg" alt="Shaleena Egdell"/></div><div class="t-info"><div class="t-name">Shaleena Egdell</div><div class="t-role">President</div><div class="t-prog">BASc Civil Engineering '27</div><a href="https://www.linkedin.com/in/shaleena-egdell/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div></div>
+      <div class="exec-tier exec-base"><div class="t-card"><div class="t-photo"><img src="assets/team/lion-alaji-2.jpg" alt="Lion Alaji"/></div><div class="t-info"><div class="t-name">Lion Alaji</div><div class="t-role">VP External</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/lion-alaji-79317533b/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div><div class="t-card"><div class="t-photo"><img src="assets/team/lucy-winkler.jpg" alt="Lucy Winkler"/></div><div class="t-info"><div class="t-name">Lucy Winkler</div><div class="t-role">VP Internal</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/lucy-winkler-455587383/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div></div>
+    </div>
+    <div class="team-sec"><div class="team-sec-head">Structural</div><div class="team-row team-row-2">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/benn-jethro-sia-2.jpg" alt="Benn Jethro Sia"/></div><div class="t-info"><div class="t-name">Benn Jethro Sia</div><div class="t-role">Structural Lead</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/benn-jethro-sia/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/marcus-ma.jpg" alt="Marcus Ma"/></div><div class="t-info"><div class="t-name">Marcus Ma</div><div class="t-role">Structural Lead</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/marcus876/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    </div></div>
+    <div class="team-sec"><div class="team-sec-head">Fabrication</div><div class="team-row team-row-2">
+      <article class="t-card"><div class="t-photo"><div class="t-photo-ph">TE</div></div><div class="t-info"><div class="t-name">Tatum Ellwood</div><div class="t-role">Fabrication Lead</div><div class="t-prog">BASc Civil Engineering '27</div><a href="https://www.linkedin.com/in/tatumellwood/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></article>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/jobanpreet-singh.jpg" alt="Jobanpreet Singh"/></div><div class="t-info"><div class="t-name">Jobanpreet Singh</div><div class="t-role">Fabrication Lead</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/jobanpreet8/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    </div></div>
+    <div class="team-sec"><div class="team-sec-head">Operations</div><div class="team-row team-row-3">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/tavisha-verma.jpg" alt="Tavisha Verma"/></div><div class="t-info"><div class="t-name">Tavisha Verma</div><div class="t-role">Finance Lead</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/tavisha-verma-9704742b0/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <article class="t-card"><div class="t-photo"><div class="t-photo-ph">MR</div></div><div class="t-info"><div class="t-name">Mahmoud Rabie</div><div class="t-role">Sponsorships Lead</div><div class="t-prog">BASc Electrical Engineering '28</div><a href="https://www.linkedin.com/in/mahmoudrabie21/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></article>
+      <article class="t-card"><div class="t-photo"><div class="t-photo-ph">HU</div></div><div class="t-info"><div class="t-name">Hayden Uniac</div><div class="t-role">Marketing Lead</div><div class="t-prog">BASc Civil Engineering '29</div><a href="https://www.linkedin.com/in/hayden-uniac-8474303a0/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></article>
+    </div></div>
+    </div>
+    <div id="tm-2025" class="tm-season" role="tabpanel" aria-labelledby="tab-2025"><div class="legacy-roster">
+    <div class="lead-row">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/ravy-lock.jpg" alt="Ravy Lock"/></div><div class="t-info"><div class="t-name">Ravy Lock</div><div class="t-role">Team Captain</div><div class="t-prog">BASc Civil Engineering '26</div><a href="https://www.linkedin.com/in/ravy-lock/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/shaleena-egdell.jpg" alt="Shaleena Egdell"/></div><div class="t-info"><div class="t-name">Shaleena Egdell</div><div class="t-role">Project Manager</div><div class="t-prog">BASc Civil Engineering '27</div><a href="https://www.linkedin.com/in/shaleena-egdell/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/ellen-shinn.jpg" alt="Ellen Shinn"/></div><div class="t-info"><div class="t-name">Ellen Shinn</div><div class="t-role">Internal Director</div><div class="t-prog">BASc Civil Engineering '26</div><a href="https://www.linkedin.com/in/ellen-shinn-b8ba52295/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      </div>
+    </div>
+    <div class="team-sec"><div class="team-sec-head">Design Leads</div><div class="team-row">
+<div class="t-card"><div class="t-photo"><img src="assets/team/cole-berube.jpg" alt="Cole Berube"/></div><div class="t-info"><div class="t-name">Cole Berube</div><div class="t-role">Structural Lead</div><div class="t-prog">BASc Civil Engineering '26</div><a href="https://www.linkedin.com/in/cole-berube-7933262b8/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/benn-jethro-sia-2.jpg" alt="Benn Jethro Sia"/></div><div class="t-info"><div class="t-name">Benn Jethro Sia</div><div class="t-role">Structural Lead</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/benn-jethro-sia/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    
+<div class="t-card"><div class="t-photo"><img src="assets/team/victor-yang.jpg" alt="Victor Yang"/></div><div class="t-info"><div class="t-name">Victor Yang</div><div class="t-role">Fabrication Lead</div><div class="t-prog">BASc Manufacturing Engineering '27</div><a href="https://www.linkedin.com/in/victor-y/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/kai-geismayr.jpg" alt="Kai Geismayr"/></div><div class="t-info"><div class="t-name">Kai Geismayr</div><div class="t-role">Fabrication Lead</div><div class="t-prog">BASc Civil Engineering '27</div><a href="https://www.linkedin.com/in/kai-geismayr/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    
+    </div></div>
+    <div class="team-sec"><div class="team-sec-head">Finance</div><div class="team-row">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/marcus-ma.jpg" alt="Marcus Ma"/></div><div class="t-info"><div class="t-name">Marcus Ma</div><div class="t-role">Finance Director</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/marcus876/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/tavisha-verma.jpg" alt="Tavisha Verma"/></div><div class="t-info"><div class="t-name">Tavisha Verma</div><div class="t-role">Finance Director</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/tavisha-verma-9704742b0/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    </div></div>
+    <div class="team-sec"><div class="team-sec-head">Outreach &amp; Sponsorships</div><div class="team-row">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/lion-alaji-2.jpg" alt="Lion Alaji"/></div><div class="t-info"><div class="t-name">Lion Alaji</div><div class="t-role">Sponsorship Director</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/lion-alaji-79317533b/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/jobanpreet-singh.jpg" alt="Jobanpreet Singh"/></div><div class="t-info"><div class="t-name">Jobanpreet Singh</div><div class="t-role">Sponsorship Director</div><div class="t-prog">BASc Civil Engineering '28</div></div></div>
+    </div></div>
+    <div class="team-sec"><div class="team-sec-head">Marketing</div><div class="team-row">
+      <div class="t-card"><div class="t-photo"><img src="assets/team/jesse-boymook-fisher.jpg" alt="Jesse Boymook-Fisher"/></div><div class="t-info"><div class="t-name">Jesse Boymook-Fisher</div><div class="t-role">Marketing Director</div><div class="t-prog">BASc Civil Engineering '26</div><a href="https://www.linkedin.com/in/jesse-boymook-fisher/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+      <div class="t-card"><div class="t-photo"><img src="assets/team/lucy-winkler.jpg" alt="Lucy Winkler"/></div><div class="t-info"><div class="t-name">Lucy Winkler</div><div class="t-role">Marketing Director</div><div class="t-prog">BASc Civil Engineering '28</div><a href="https://www.linkedin.com/in/lucy-winkler-455587383/" target="_blank" rel="noopener" class="t-linkedin"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a></div></div>
+    </div></div>
+    </div>
+  </div>
+</section>
+<section id="p-events" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">Field Notes</div><h2 class="pane-title">Season Log.</h2><p class="pane-lead">A look at what the team has been building, practising, and competing in.</p></div>
+    <div class="ev-tabs">
+      <button class="ev-tab active" data-season="s2025">2024&ndash;25 Season</button>
+      <button class="ev-tab" data-season="s2026">2025&ndash;26 Season</button>
+    </div>
+    <div id="ev-s2025" class="ev-season active">
+      <p class="ev-intro">Our inaugural season took a brand-new team to its first <strong>CNSBC</strong>, in <strong>Winnipeg, Manitoba</strong>, in May 2025.</p>
+      <div class="ev-heading">The Debut</div>
+      <div class="comp-strip" style="grid-template-columns:1fr;max-width:900px;">
+        <div class="comp-strip-item" style="aspect-ratio:16/9;">
+          <img src="assets/comp-photos/web/team-2025-winnipeg.jpg" alt="The UBCO Steel Bridge team with their first bridge at Princess Auto Stadium in Winnipeg" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">Princess Auto Stadium &middot; Winnipeg, MB</span>Our first bridge and our first nationals &mdash; the whole crew behind the rail.</div>
+        </div>
+      </div>
+      <div class="ev-heading">Highlights</div>
+      <div class="ev-hl-grid">
+        <div class="ev-hl-card"><div class="ev-hl-body"><div class="ev-hl-tag">Competition</div><div class="ev-hl-title">Debut at the CNSBC</div><div class="ev-hl-desc">Our first national competition, in Winnipeg, against universities from across Canada.</div></div></div>
+        <div class="ev-hl-card"><div class="ev-hl-body"><div class="ev-hl-tag">Timed Assembly</div><div class="ev-hl-title">On the Clock</div><div class="ev-hl-desc">Months of practice paid off in a clean, coordinated build on competition day.</div></div></div>
+        <div class="ev-hl-card"><div class="ev-hl-body"><div class="ev-hl-tag">Team</div><div class="ev-hl-title">Representing UBCO</div><div class="ev-hl-desc">UBC Okanagan&rsquo;s first-ever appearance at the Canadian National Steel Bridge Competition.</div></div></div>
+      </div>
+    </div>
+    <div id="ev-s2026" class="ev-season">
+      <p class="ev-intro">Season two brought a brand-new bridge and a sharper return to the <strong>Canadian National Steel Bridge Competition</strong>.</p>
+      <div class="ev-heading">From the Floor</div>
+      <div class="comp-strip">
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/build-line.jpg" alt="The UBCO team passing bridge members down the line during the timed build" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">Construction Speed &middot; CNSBC 2026</span>Down the line &mdash; every member moved by hand.</div>
+        </div>
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/arena-wide.jpg" alt="The UBCO team on the competition arena floor" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">Competition floor</span>Our corner of the arena before the whistle.</div>
+        </div>
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/bridge-ubco-letters.jpg" alt="The finished UBCO bridge with U-B-C-O across the deck" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">After the run &middot; The bridge</span>Four letters across the deck: U-B-C-O.</div>
+        </div>
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/sponsor-shirt.jpg" alt="The UBCO team's shirts with sponsor logos on the back" loading="lazy" style="object-position:center 32%;"/>
+          <div class="comp-strip-cap"><span class="meta">On our backs</span>The names that got us here.</div>
+        </div>
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/parts-verticals.jpg" alt="The bridge members laid out before assembly" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">The kit</span>Every member machined, marked, and ready.</div>
+        </div>
+        <div class="comp-strip-item">
+          <img src="assets/comp-photos/web/parts-clamps.jpg" alt="Bridge components and clamps staged on the floor" loading="lazy"/>
+          <div class="comp-strip-cap"><span class="meta">Pre-build</span>Laid out and indexed before the clock starts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="p-sponsors" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">Industry Partners</div><h2 class="pane-title">Backed by Industry.</h2><p class="pane-lead">The organizations that make it possible for UBCO Steel Bridge to design, fabricate, and compete.</p></div>
+    <div class="spon-tier">Gold Sponsors</div><div class="spon-grid spon-grid-gold"><a href="https://www.cisc-icca.ca/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/cisc-logo.png" alt="CISC" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">CISC-ICCA</div><div class="spon-card-full">Canadian Institute of Steel Construction</div><p class="spon-card-desc">Canada's national voice for the structural steel industry since 1930. CISC-ICCA advances the use of steel in construction through technical resources, education, and advocacy — supporting engineers, fabricators, and contractors from coast to coast.</p></div></a><a href="http://www.altarmetal.ca/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/altar-logo.png" alt="ALTAR" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">Altar Metal Fab</div><div class="spon-card-full">Altar Metal Fab Co. Ltd.</div><p class="spon-card-desc">A trusted Kelowna-based steel fabrication shop known for precision craftsmanship and a commitment to quality. Altar Metal has been an invaluable local partner, providing our team with direct fabrication support and hands-on industry mentorship throughout our build season.</p></div></a><a href="https://eac.bc.ca/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/emil-logo.png" alt="EMIL" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">Emil Anderson</div><div class="spon-card-full">Emil Anderson Construction Inc.</div><p class="spon-card-desc">One of British Columbia's most established infrastructure contractors, Emil Anderson has been building roads, bridges, and civil works across the province since 1938. Their multi-disciplined expertise and deep roots in BC construction make them an ideal partner for a team focused on real-world structural engineering.</p></div></a><a href="https://www.seabc.ca/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/seabc-logo.jpg" alt="SEABC" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">SEABC</div><div class="spon-card-full">Structural Engineers Association of BC</div><p class="spon-card-desc">The Structural Engineers Association of British Columbia promotes excellence, professionalism, and public safety in structural engineering practice across BC. SEABC's support of student teams like ours reflects their commitment to developing the next generation of structural engineers.</p></div></a><a href="https://www.ledcor.com/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/ledcor-logo.png" alt="LEDCOR" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">Ledcor</div><div class="spon-card-full">Ledcor Group of Companies</div><p class="spon-card-desc">One of North America's most diversified construction and engineering companies, Ledcor operates across building, civil, industrial, and pipeline sectors. Their backing of UBCO Steel Bridge reflects a genuine investment in emerging engineering talent and the future of Canada's construction workforce.</p></div></a><a href="https://reliabletube.com/" target="_blank" rel="noopener" class="spon-card s-gold"><div class="spon-img-wrap" style="height:160px; padding:20px;"><img src="assets/img/reliable-logo.png" alt="RELIABLE" style="max-height:100px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">GOLD SPONSOR</div><div class="spon-card-name">Reliable Tube</div><div class="spon-card-full">Reliable Tube Inc.</div><p class="spon-card-desc">A proudly Canadian structural steel supplier with over 35 years of expertise serving Western Canada. Reliable Tube provides the hollow structural sections and steel products that form the backbone of our bridge designs — their product knowledge and reliability are critical to our success on competition day.</p></div></a></div>
+    <div class="spon-tier">Silver Sponsors</div><div class="spon-grid spon-grid-silver"><a href="https://altair.com/" target="_blank" rel="noopener" class="spon-card s-silver"><div class="spon-img-wrap" style="height:130px; padding:20px;">
+<img src="assets/img/altair-logo.png" alt="ALTAIR" style="max-height:80px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">SILVER SPONSOR</div><div class="spon-card-name">Altair</div><div class="spon-card-full">Altair Engineering Inc.</div></div></a><a href="https://www.basiseng.ca/" target="_blank" rel="noopener" class="spon-card s-silver"><div class="spon-img-wrap" style="height:130px; padding:20px;">
+<img src="assets/img/basis-logo.jpg" alt="BASIS" style="max-height:80px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">SILVER SPONSOR</div><div class="spon-card-name">BASIS Engineering</div><div class="spon-card-full">BASIS Engineering Ltd.</div></div></a></div>
+    <div class="spon-tier">Bronze Sponsors</div><div class="spon-grid spon-grid-bronze"><a href="https://www.ae.ca/" target="_blank" rel="noopener" class="spon-card s-bronze"><div class="spon-img-wrap" style="height:110px; padding:20px;"><img src="assets/img/associated-logo.png" alt="ASSOCIATED" style="max-height:60px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">BRONZE SPONSOR</div><div class="spon-card-name">Associated Engineering</div><div class="spon-card-full">Associated Engineering Group Ltd.</div></div></a><a href="https://glotmansimpson.com/" target="_blank" rel="noopener" class="spon-card s-bronze"><div class="spon-img-wrap" style="height:110px; padding:20px;"><img src="assets/img/glotman-logo.png" alt="GLOTMAN" style="max-height:60px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">BRONZE SPONSOR</div><div class="spon-card-name">Glotman Simpson</div><div class="spon-card-full">Glotman Simpson Consulting Engineers</div></div></a><a href="https://www.wildstone.com/" target="_blank" rel="noopener" class="spon-card s-bronze"><div class="spon-img-wrap" style="height:110px; padding:20px;"><img src="assets/img/wildstone-logo.png" alt="Wildstone Construction" style="max-height:60px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">BRONZE SPONSOR</div><div class="spon-card-name">Wildstone Construction</div><div class="spon-card-full">Wildstone Construction &amp; Forestry Ltd.</div></div></a><a href="https://ok.ubc.ca/" target="_blank" rel="noopener" class="spon-card s-bronze"><div class="spon-img-wrap" style="height:110px; padding:20px;"><img src="assets/img/ubc-logo.png" alt="UBC" style="max-height:60px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">BRONZE SPONSOR</div><div class="spon-card-name">UBC Okanagan</div><div class="spon-card-full">University of British Columbia Okanagan</div></div></a><a href="https://www.suo.ca/" target="_blank" rel="noopener" class="spon-card s-bronze"><div class="spon-img-wrap" style="height:110px; padding:20px;"><img src="assets/img/suo-logo.jpg" alt="SUO" style="max-height:60px; max-width:75%; object-fit:contain;"/></div><div class="spon-card-body"><div class="spon-badge">BRONZE SPONSOR</div><div class="spon-card-name">SUO</div><div class="spon-card-full">Students' Union of UBC Okanagan</div></div></a></div>
+    <div class="spon-cta"><h3>Become a Sponsor</h3><p>Sponsoring UBCO Steel Bridge gives your organization direct exposure to motivated engineering students.</p><button class="btn-go" data-panel="contact">Contact Us</button></div>
+  </div>
+</section>
+<section id="p-contact" class="panel">
+  <div class="pane-wrap">
+    <div class="pane-head"><div class="sec-label">Connect</div><h2 class="pane-title">Get Involved.</h2><p class="pane-lead">Whether you want to join the team, discuss sponsorship, or simply learn more &mdash; we&rsquo;d like to hear from you.</p></div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci-block"><div class="ci-label">Location</div><div class="ci-val">UBC Okanagan Campus<br/>Kelowna, British Columbia, Canada</div></div>
+        <div class="ci-block"><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:ubcosteelbridge@gmail.com">ubcosteelbridge@gmail.com</a></div></div>
+        <div class="ci-block"><div class="ci-label">Follow Us</div><div class="ci-val">Stay up to date with build progress.<div class="social-row"><a href="https://www.instagram.com/ubcosteelbridge/" target="_blank" rel="noopener" class="soc-btn">Instagram</a><a href="https://www.linkedin.com/company/ubco-steelbridge/" target="_blank" rel="noopener" class="soc-btn">LinkedIn</a></div></div></div>
+        <div class="ci-block"><div class="ci-label">Join the Team</div><div class="ci-val">We recruit at the start of each academic year. No fabrication experience required.</div></div>
+      </div>
+      <form class="cform" action="https://formsubmit.co/ubcosteelbridge@gmail.com" method="POST" onsubmit="handleForm(event)"><input type="hidden" name="_subject" value="New enquiry from the UBCO Steel Bridge website"/><input type="hidden" name="_template" value="table"/><input type="hidden" name="_captcha" value="false"/><input type="text" name="_honey" style="display:none"/>
+        <div class="f-row">
+          <div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="First name" required/></div>
+          <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Last name" required/></div>
+        </div>
+        <div class="fg"><label>Email</label><input type="email" name="email" placeholder="you@email.com" required/></div>
+        <div class="fg"><label>Reason</label><select name="Reason"><option value="">Select...</option><option>Joining the team</option><option>Sponsorship inquiry</option><option>Media / Press</option><option>Other</option></select></div>
+        <div class="fg"><label>Message</label><textarea name="Message" placeholder="Your message..." required></textarea></div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="foot-left">
+    <img src="assets/img/ubco-steel-bridge.jpg" alt="UBCO Steel Bridge"/>
+    <div><div class="foot-name">UBCO Steel Bridge</div><div class="foot-sub">Built in Kelowna</div></div>
+  </div>
+  <div class="foot-social">
+    <a href="https://www.instagram.com/ubcosteelbridge/" target="_blank" rel="noopener" class="foot-soc-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    <a href="https://www.linkedin.com/company/ubco-steelbridge/" target="_blank" rel="noopener" class="foot-soc-link" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="mailto:ubcosteelbridge@gmail.com" class="foot-soc-link" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+  </div>
+  <div class="foot-right">&copy; 2025&ndash;26 UBCO Steel Bridge Team</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
