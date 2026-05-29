@@ -1,0 +1,22 @@
+# Old site versions / backups
+ubco_steelbridge_v15.html
+ubco_steelbridge_v15.backup.html
+ubco_steelbridge_v16.html
+
+# Source / unused assets (kept locally, not needed by the site)
+assets/comp-photos/drive/
+assets/comp-photos/*.jpg
+assets/comp-photos/*.JPG
+steel_bridge_assembly_2026.mp4
+logo.png
+cd9752d53a45eedd5c18e66ad97e7853e45b5c20.jpg
+
+# Build scripts & unrelated files
+*.py
+*.sh
+*.pdf
+
+# Tooling / local / temp
+.claude/
+_sk*.html
+_skeleton*.html
