@@ -23,7 +23,7 @@
     if (id === 'team')     observeCards('#p-team .t-card');
     if (id === 'sponsors') observeCards('.spon-card');
     if (id === 'home')     { countersFired = false; document.querySelectorAll('.stat-n[data-to]').forEach(function(el){ el.textContent = '0'; }); runCounters(); observeAnims(); observeCards('.ed-photo-wrap'); }
-    if (id === 'events')   observeCards('.comp-strip-item');
+    if (id === 'events')   observeCards('.gal-cell');
     closeMenu();
   }
 
@@ -42,6 +42,7 @@
       document.querySelectorAll('.ev-tab').forEach(function(b) { b.classList.remove('active'); });
       document.getElementById('ev-' + btn.dataset.season).classList.add('active');
       btn.classList.add('active');
+      document.querySelectorAll('#ev-' + btn.dataset.season + ' .gal-cell').forEach(function(c){ c.classList.add('in-view'); });
     });
   });
   document.querySelectorAll('.tm-tab').forEach(function(btn) {
@@ -101,6 +102,13 @@
     var h1  = document.querySelector('.hs-h1');
     var hero = document.querySelector('.hero-wrap');
     if (!mid || !h1 || !hero) return;
+
+    /* Touch / no-wheel devices never fire the wheel-driven reveal — show the middle line statically and skip the beam intercept */
+    if (window.matchMedia('(hover: none), (pointer: coarse)').matches || !('onwheel' in window)) {
+      mid.style.opacity = '1';
+      mid.style.transform = 'none';
+      return;
+    }
 
     var MAX_OFFSET = Math.min(window.innerWidth * 0.5, 700); /* start distance */
     var SCROLL_BUDGET = 350; /* total wheel delta needed to fully snap */
@@ -241,6 +249,16 @@
     if (!wrap || !canvas) return;
     var ctx = canvas.getContext('2d');
 
+    /* Mobile: skip the 196-frame preload (heavy on data + memory). Show one static frame and collapse the tall scroll container. */
+    if (window.matchMedia('(max-width: 700px), (pointer: coarse)').matches) {
+      wrap.classList.add('vid-done','vid-playing');
+      var still = new Image();
+      still.onload = function(){ canvas.width = still.naturalWidth; canvas.height = still.naturalHeight; ctx.drawImage(still, 0, 0); };
+      still.src = 'vid-frames/f195.jpg';
+      if (bar) bar.style.width = '100%';
+      return;
+    }
+
     /* Preload all frames */
     var frames = [];
     var loaded = 0;
@@ -371,3 +389,52 @@ window.addEventListener('scroll',function(){
     paraTicking=true;
   }
 },{passive:true});
+/* ── Season Log gallery lightbox ── */
+(function(){
+  var lb = document.getElementById('lightbox');
+  if (!lb) return;
+  var lbImg = lb.querySelector('.lb-img');
+  var lbCap = lb.querySelector('.lb-cap');
+  var cells = [], curIdx = 0;
+  function render(){
+    var cell = cells[curIdx]; if (!cell) return;
+    var img = cell.querySelector('img');
+    lbImg.src = (img && (img.currentSrc || img.src)) || '';
+    lbImg.alt = (img && img.alt) || '';
+    var cap = cell.getAttribute('data-cap') || '';
+    lbCap.textContent = cap;
+    lbCap.style.display = cap ? '' : 'none';
+  }
+  function openFrom(cell){
+    var grid = cell.closest('.ev-gallery-grid') || document;
+    cells = Array.prototype.slice.call(grid.querySelectorAll('.gal-cell'));
+    curIdx = cells.indexOf(cell);
+    render();
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  function move(d){
+    if (!cells.length) return;
+    curIdx = (curIdx + d + cells.length) % cells.length;
+    render();
+  }
+  document.addEventListener('click', function(e){
+    var cell = e.target.closest('.gal-cell');
+    if (cell) { openFrom(cell); return; }
+    if (e.target.closest('.lb-next')) { move(1); return; }
+    if (e.target.closest('.lb-prev')) { move(-1); return; }
+    if (e.target.closest('.lb-close') || e.target === lb) { close(); return; }
+  });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowRight') move(1);
+    else if (e.key === 'ArrowLeft') move(-1);
+  });
+})();
