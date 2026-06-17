@@ -184,7 +184,7 @@ body{font-family:var(--fb);background:var(--bg);color:var(--m);overflow-x:hidden
 .lead-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:4rem;}
 .team-sec{margin-bottom:3.5rem;padding:0 1rem;}
 .team-sec-head{font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);padding-bottom:.75rem;border-bottom:2px solid var(--ar);margin-bottom:1.5rem;}
-.team-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2rem;}
+.team-row{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;}
 .team-row-2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:640px;margin:0 auto;}
 .team-row-3{grid-template-columns:repeat(3,minmax(0,1fr));max-width:960px;margin:0 auto;}
 /* Executive triangle */
@@ -552,3 +552,6 @@ footer::before{content:'';position:absolute;inset:0;background:repeating-linear-
   .exec-sec .exec-tier{flex-direction:column;align-items:stretch;}
   .exec-sec .exec-tier .t-card,.exec-sec .exec-top .t-card{flex:0 0 auto;width:100%;}
 }
+/* Centre sub-team rows so even/short rows are symmetrical on desktop; full rows still fill; single column on mobile */
+.team-row .t-card{flex:0 1 215px;}
+@media (max-width:700px){ .team-row .t-card{flex:1 1 100%;max-width:none;} }
